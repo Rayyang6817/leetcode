@@ -25,7 +25,7 @@
 class Solution (object):
     def twoSum(self, nums, target): 
         for i in range(len(nums)): #定義一個迴圈依照nums的長度 若長度是4則會從0~3走遍
-            for j in range( i + 1, len(nums)):#對於每個i，j將從i的下一個位置開始，到nums的最後一個位置。
+            for j in range(i + 1, len(nums)):#對於每個i，j將從i的下一個位置開始，到nums的最後一個位置。
                 if nums[i] + nums[j] == target:#如果有碰到i位置的數字+j位置的數字 
                     return [i, j]#如果等於目標數字則return i跟j的位置
                 
